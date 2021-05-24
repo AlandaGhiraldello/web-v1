@@ -13,14 +13,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="../../public/styles/all.scss">
-    <link rel="stylesheet" href="../../public/styles/about.scss">
-    
+    <link rel="stylesheet" href="../../public/styles/login.scss">
+
     <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
-    <title>Sobre a Empresa</title>
+    <title>Login</title>
 </head>
 <body>
     
-    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #1B3D46">
+    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #1B3D46; color: white;">
         <a class="navbar-brand" href="../views/about.html"><img src="../../public/assets/Camada 223.svg" alt="SowTec" width="150px"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
           <span class="navbar-toggler-icon"></span>
@@ -28,16 +28,16 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="../views/index.html">HOME  | </a>
+                <a class="nav-link" href="../views/index.html">HOME   |</a>
             </li>    
             <li class="nav-item">
-                <a class="nav-link" href="../views/form-events.html">NOVO CONTEÚDO/EVENTO  | </a>
+                <a class="nav-link" href="../views/form-events.html">NOVO CONTEÚDO/EVENTO   |</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="../views/user-profile.html">MEU PERFIL  | </a>
+                <a class="nav-link" href="../views/user-profile.html">MEU PERFIL   |</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../views/form-user.html">CADASTRE-SE  | </a>
+              <a class="nav-link" href="../views/form-user.html">CADASTRE-SE   |</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="../views/login.html"><img src="../../public/assets/USER1.svg" alt="Login" width="30px" height="30px"></a>
@@ -46,19 +46,33 @@
         </div>  
     </nav>
 
-    <div id="corpo">
-        <div id="titulo">
-            <h3>
-                Sobre a empresa
-            </h3>
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+            <div class="login">
+                <form action="/action_page.php">
+                    <h3>Login</h3>
+                    <div class="form-group">
+                      <label for="email">E-mail:</label>
+                      <input type="email" class="form-control" placeholder="E-mail" id="email" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="pwd">Senha:</label>
+                      <input type="password" class="form-control" placeholder="Senha" id="pwd" required>
+                    </div>
+                    <button type="submit" class="btn btn-info btn-lg btn-block">Entrar</button>
+                    <div class="not-count">
+                        <p>Ainda não tem acesso? Crie sua conta <a href="../views/form-user.html">clicando aqui!</a></p>
+                      </div>
+                  </form>
+            </div>
         </div>
-        <div id="paragrafos">
-            <p>Nascemos com um único objeto de ajudar estudantes de T.I conecatando com criadores de conteudo e eventos sobre tecnologia.</p>
-            <p>Sabemos o quão dificil é para quem está iniciando tanto como estudante, como ingreção no ramo da criação de conteudo digital, por isso resolvemos unir o util ao agradavel trazendo uma plataforma onde seja possivel conectar essas pessoas para que ambos consigam evoluir e se ajudar neste mundo que estamos mais envolvidos pela tecnologia e seu maravilhoso universo!</p>
-            <p>Junte-se a nós e SOWTec</p>
-        </div>
+        <div class="col-2"></div>
+      </div>
 
-    </div>
+    
+
+   
 
 
 </body>

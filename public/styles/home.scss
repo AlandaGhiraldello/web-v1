@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    margin-top: 0;
+}
+
+/* corpo da pagina  */
+#corpo{
+    margin-top: 4%;
+    font-size: 20px;
+    
+}
+
+#titulo{
+    padding-left: 10%;
+    padding-right: 60%;
+}
+
+#paragrafos{
+    font-size: 22px;
+    padding: 3% 25% 0 15%;
+}
+
+h3{
+    margin-top: 4%;
+    margin-left: 8%;
+}
+
+.card{
+    background-color: #b3cfd4;
+    font-size: 20px ;
+    font-family: 'Source Serif Pro', serif;
+}
+
+.card-footer{
+    justify-content: center;
+    align-content: center;
+}
