@@ -1,0 +1,37 @@
+.modal-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-footer{
+    display: flex;
+    justify-content: center;
+}
+
+.row{
+    width: 100%;
+}
+
+h3{
+    margin-left: 8%;
+}
+
+h4{
+    color: #0D2A31;
+    font-family: 'David Libre', serif;
+    font-weight: 700;  
+    font-size: 28px;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: start;
+    margin-top: 6%;
+    margin-left: 8%;
+    width: 600px !important;
+}
+

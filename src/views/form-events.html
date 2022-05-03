@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=David+Libre:wght@400;500;700&display=swap " rel=" stylesheet ">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="../../public/styles/all.scss">
+  <link rel="stylesheet" href="../../public/styles/form-events.scss">
+
+  <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
+  <title>Cadastro de Eventos e Conteúdos</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #1B3D46">
+    <a class="navbar-brand" href="../views/about.html"><img src="../../public/assets/Camada 223.svg" alt="SowTec"
+        width="150px"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../views/index.html">HOME | </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../views/form-events.html">NOVO CONTEÚDO/EVENTO | </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../views/user-profile.html">MEU PERFIL | </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../views/form-user.html">CADASTRE-SE | </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../views/login.html"><img src="../../public/assets/USER1.svg" alt="Login"
+              width="30px" height="30px"></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="row">
+    <div class="col-2"></div>
+    <div class="col-8">
+      <div class="form-events">
+        <form action="/action_page.php">
+          <div class="form-group" style="width: 100%;">
+            <input type="text" class="form-control" id="ename" placeholder="Nome do Evento/Conteúdo" name="ename" required>
+          </div>
+          <div class="form-group">
+            <label for="startDate">Data de inicio:</label>
+            <input type="date" id="startDate" name="startDate">
+          </div>
+          <div class="form-group">
+            <label for="endDate">Data de fim:</label>
+            <input type="date" id="endDate" name="endDate">
+          </div>
+
+          <select name="types" class="custom-select">
+            <option selected>Selecione o tipo</option>
+            <option value="contents">Conteúdo</option>
+            <option value="events">Evento</option>
+          </select>
+
+          <div class="form-group">
+            <label for="link">Adicione aqui o link:</label>
+            <input type="url" id="link" name="link">
+          </div>
+
+          <select name="area" class="custom-select">
+            <option selected>Selecione a área que se refere</option>
+            <option value="full">Desenvolvimento Fullstack</option>
+            <option value="front">Desenvolvimento FrontEnd</option>
+            <option value="back">Desenvolvimento Backend</option>
+            <option value="mobile">Desenvolvimento Mobile</option>
+            <option value="ciencie">Ciência de Dados</option>
+            <option value="ux">UX</option>
+            <option value="ui">UI</option>
+          </select>
+
+          <select name="plataform" class="custom-select">
+            <option selected>Selecione a plataforma em que acontecerá</option>
+            <option value="instagram">Instagram</option>
+            <option value="youtube">Youtube</option>
+            <option value="facebook">Facebook</option>
+            <option value="github">GitHub</option>
+            <option value="siteproprio">Site Próprio</option>
+            <option value="twitter">Twitter</option>
+            <option value="telegram">Telegram</option>
+            <option value="other">Outros</option>
+          </select>
+
+          <select name="tecnologia" class="custom-select">
+            <option selected>Selecione a tecnologia referente</option>
+            <option value="php">PHP</option>
+            <option value="htmlcss">HTML/CSS/BOOTSRAP</option>
+            <option value="java">Java</option>
+            <option value="javascript">JavaScript</option>
+            <option value="angular">Angular Js</option>
+            <option value="react">React</option>
+            <option value="python">Python</option>
+            <option value="sql">SQL</option>
+            <option value="xd">Adobe XD</option>
+            <option value="mongo">MongoDB</option>
+            <option value="flutter">Flutter</option>
+          </select>
+
+          <button type="submit" class="btn btn-primary">Criar conteúdo/evento</button>
+        </form>
+      </div>
+    </div>
+    <div class="col-2"></div>
+  </div>
+
+
+</body>
+
+</html>

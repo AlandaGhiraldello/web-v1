@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel = "preconnect" href = "https://fonts.gstatic.com"><link href = "https://fonts.googleapis.com/css2?family=David+Libre:wght@400;500;700&display=swap "rel =" stylesheet ">
+  <link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="../../public/styles/all.scss">
+  <link rel="stylesheet" href="../../public/styles/form-user.scss">
+  
+  <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
+  <title>Cadastro de Usuário</title>
+</head>
+<body>
+  
+  <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #1B3D46">
+    <a class="navbar-brand" href="../views/about.html"><img src="../../public/assets/Camada 223.svg" alt="SowTec" width="150px"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="../views/index.html">HOME  | </a>
+        </li>    
+        <li class="nav-item">
+            <a class="nav-link" href="../views/form-events.html">NOVO CONTEÚDO/EVENTO  | </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="../views/user-profile.html">MEU PERFIL  | </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../views/form-user.html">CADASTRE-SE  | </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="../views/login.html"><img src="../../public/assets/USER1.svg" alt="Login" width="30px" height="30px"></a>
+        </li>
+      </ul>
+    </div>  
+</nav>
+
+<div class="row">
+  <div class="col-2"></div>
+  <div class="col-8">
+    <div class="form-events">
+      <form action="/action_page.php">
+        <div class="form-group" style="width: 100%;">
+          <input type="text" class="form-control" id="uname" placeholder="Nome Completo" name="uname" required>
+        </div>
+        <div class="form-group">
+          <label for="birthday">Data de Nascimento:</label>
+          <input type="date" id="birthday" name="birthday">
+        </div>
+        <div class="form-group">
+          <label for="phone">Celular:</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{5}-[0-9]{4}">
+        </div>
+        
+        <div class="form-group">
+          <input type="email" class="form-control" placeholder="E-mail" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" id="pwd" placeholder="Senha" name="pswd" required>
+        </div>
+        
+        <div class="form-group">
+          <input type="text" class="form-control" id="city" placeholder="Em qual cidade você mora?" name="city">
+        </div>
+       
+
+        <select name="states" class="custom-select">
+          <option selected>Selecione o estado em que reside</option>
+          <option value="ac">Acre</option>
+          <option value="al">Alagoas</option>
+          <option value="ap">Amapá</option>
+          <option value="am">Amazonas</option>
+          <option value="ba">Bahia</option>
+          <option value="ce">Ceará</option>
+          <option value="df">Distrito Federal</option>
+          <option value="es">Espírito Santo</option>
+          <option value="go">Goiás</option>
+          <option value="ma">Maranhão</option>
+          <option value="mt">Mato Grosso</option>
+          <option value="ms">Mato Grosso do Sul </option>
+          <option value="mg">Minas Gerais</option>
+          <option value="pa">Pará</option>
+          <option value="pb">Paraíba</option>
+          <option value="pr">Paraná</option>
+          <option value="pe">Pernambuco</option>
+          <option value="pi">Piauí</option>
+          <option value="rj">Rio de Janeiro</option>
+          <option value="rn">Rio Grande do Norte</option>
+          <option value="rs">Rio Grande do Sul</option>
+          <option value="ro">Rondônia</option>
+          <option value="rr">Roraima</option>
+          <option value="sc">Santa Catarina</option>
+          <option value="sp">São Paulo</option>
+          <option value="se">Sergipe</option>
+          <option value="to">Tocantins</option>
+        </select>
+
+        <div class="form-group">
+          <input type="text" class="form-control" id="uinstagram" placeholder="Instagram" name="uinstagram">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" id="uyoutube" placeholder="Youtube" name="uyoutube">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" id="ufacebook" placeholder="Facebook" name="ufacebook">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" id="ugithub" placeholder="GitHub" name="ugithub">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" id="usiteproprio" placeholder="Site Próprio" name="usiteproprio">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" id="uemail" placeholder="E-mail livre para contato" name="uemail">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" id="utelegram" placeholder="Grupo no Telegram" name="utelegram">
+        </div>
+
+        <select name="area" class="custom-select">
+          <option selected>Selecione sua área de atuação</option>
+          <option value="full">Desenvolvimento Fullstack</option>
+          <option value="front">Desenvolvimento FrontEnd</option>
+          <option value="back">Desenvolvimento Backend</option>
+          <option value="mobile">Desenvolvimento Mobile</option>
+          <option value="ciencie">Ciência de Dados</option>
+          <option value="ux">UX</option>
+          <option value="ui">UI</option>
+        </select>
+
+        <select name="plataform" class="custom-select">
+          <option selected>Selecione sua plataforma principal de conteúdos</option>
+          <option value="instagram">Instagram</option>
+          <option value="youtube">Youtube</option>
+          <option value="facebook">Facebook</option>
+          <option value="github">GitHub</option>
+          <option value="siteproprio">Site Próprio</option>
+          <option value="twitter">Twitter</option>
+          <option value="telegram">Telegram</option>
+          <option value="other">Outros</option>
+        </select>
+
+        <select name="tecnologia" class="custom-select">
+          <option selected>Selecione a principal tecnologia que passa conteúdos</option>
+          <option value="php">PHP</option>
+          <option value="htmlcss">HTML/CSS/BOOTSRAP</option>
+          <option value="java">Java</option>
+          <option value="javascript">JavaScript</option>
+          <option value="angular">Angular Js</option>
+          <option value="react">React</option>
+          <option value="python">Python</option>
+          <option value="sql">SQL</option>
+          <option value="xd">Adobe XD</option>
+          <option value="mongo">MongoDB</option>
+          <option value="flutter">Flutter</option>
+        </select>
+
+
+
+
+        <div class="form-group form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" name="remember" required> Eu aceito os termos de uso da
+            plataforma.
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Criar conta</button>
+      </form>
+    </div>
+  </div>
+  <div class="col-2"></div>
+</div>
+
+</body>
+</html>
